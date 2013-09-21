@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Raffler">
 <head>
   <title>HackfitHackathon13</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -15,7 +15,7 @@
       <%= link_to 'Sign in', sign_in_path %>
     <% end %>
     <div id="flash">
-                          
+
     <% flash.each do |key, value| %>
       <div class="flash <%= key %>"><%= value %></div>
     <% end %>
