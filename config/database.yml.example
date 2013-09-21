@@ -18,7 +18,7 @@ development:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: hackfit-hackathon-13_development
+  database: jamalogarro
   pool: 5
   username: hackfit-hackathon-13
   password:
@@ -48,7 +48,7 @@ test:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: hackfit-hackathon-13_test
+  database: jamalogarro
   pool: 5
   username: hackfit-hackathon-13
   password:
