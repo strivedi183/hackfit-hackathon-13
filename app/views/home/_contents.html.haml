@@ -1,8 +1,8 @@
 .row
   %ul
-  @courses.each do |course|
-    .col-md-4.border
-      %li= link_to(image_tag(course.image), course_path(course))
-      %li= course.title
-      %li= course.description
-    
+    -@courses.each do |course|
+      .col-md-4.border
+        %li= link_to(image_tag(course.image), course_path(course))
+        %li= course.title
+        %li= course.description
+      
