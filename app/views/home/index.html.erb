@@ -1,8 +1,5 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-
-
-<div ng-controller="RaffleCtrl">
+<h1>Welcome</h1>
+  <!--
   <form ng-submit="addEntry()">
     <input type="text" ng-model="newEntry.name">
     <input type="submit" value="add">
@@ -14,6 +11,39 @@
       <span ng-show="entry.winner" ng-class="{highlight: entry == lastWinner}" class="winner">WINNER</span>
     </li>
   </ul>
+  -->
 
-  <button ng-click="drawWinner">Draw Winner</button>
+<section id="index">
+  <div ng-controller="CoursesCtrl">
+    <!-- Videos list -->
+    <ul ng-repeat="content in contents">
+      <li>{{content.title}}</li>
+      <li>Description</li>
+      <li>{{content.description}}
+      <li>{{content.instructor}}</li>
+    </ul>
+  </div>
+</section>
+
+<seciton id="show">
+  <div ng-controller="ContentsCtrl">
+   <li>{{content.title}}<.i>
+   <li>Description</li>
+   <li>{{content.description}}</li>
+   <li>{{content.url}}</li>
+  </div>
+</section>
+
+<section id="profile">
+  <div ng-controller="UsersCtrl">
+    <ul>
+      <li>{{user.name}}</li>
+      <li>{{user.age}}</li>
+      <li>{{user.height}}</li>
+      <li>{{user.weight}}</li>
+      <li>{{user.location}}</li>
+    </ul>
+</section>
+
+
 </div>
