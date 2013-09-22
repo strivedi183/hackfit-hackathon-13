@@ -5,9 +5,7 @@ class CreateUsers < ActiveRecord::Migration
 	  t.integer :weight
 	  t.integer :height
 	  t.string	:location
-	  t.string	:type
-
-      t.timestamps
+    t.timestamps
     end
   end
 end

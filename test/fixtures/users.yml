@@ -7,7 +7,6 @@
 #  weight             :integer
 #  height             :integer
 #  location           :string(255)
-#  type               :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
 #  email              :string(255)
