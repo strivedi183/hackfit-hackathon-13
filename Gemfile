@@ -9,7 +9,6 @@ gem 'pg'
 
 gem 'clearance'
 gem 'haml'
-gem 'angularjs-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -48,3 +47,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem 'annotate'
+end

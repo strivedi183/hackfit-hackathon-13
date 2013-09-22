@@ -1,17 +1,17 @@
 # == Schema Information
 #
-# Table name: courses
+# Table name: contents
 #
 #  id          :integer          not null, primary key
 #  title       :string(255)
-#  description :text
+#  description :string(255)
 #  url         :string(255)
+#  course_id   :integer
 #  image       :string(255)
 #  created_at  :datetime
 #  updated_at  :datetime
 #
 
-class Course < ActiveRecord::Base
-  has_and_belongs_to_many :users
-  has_many :contents
+class Content < ActiveRecord::Base
+  belongs_to :course
 end
