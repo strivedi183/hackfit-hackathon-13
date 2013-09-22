@@ -17,7 +17,7 @@ u4 = User.create(name: 'Miley Cyrus', height: '60', weight: '120', location: 'Bo
 u5 = User.create(name: 'Sharon Stone', height: '63', weight: '140', location: 'Boston', url: '', image: '')
 u6 = User.create(name: 'Beyonce', height: '65', weight: '130', location: 'Boston', url: '', image: '')
 
-c1 = Course.create(title: 'Training for your first marathon', description: "Get the proper diet, running schedule and gear info so that you're ready for the NYC marathon", url: 'http://www.psl.msu.edu/_images/Gulbransen_sm.jpg', image: 'http://farm8.staticflickr.com/7191/6902027713_0cfa65d7cc.jpg')
+c1 = Course.create(title: 'Marathon Training', description: "Get the proper diet, running schedule and gear info so that you're ready for the NYC marathon", url: 'http://www.psl.msu.edu/_images/Gulbransen_sm.jpg', image: 'http://farm8.staticflickr.com/7191/6902027713_0cfa65d7cc.jpg')
 
 c2 = Course.create(title: 'Yoga', description: "The practice of yoga dates back five thousand years and its benefits have been repeatedly observed and documented over time. With regular practice, discipline and honest effort you will: reshape your body, reduce risk for sports injury, reduce the effects of stress.", url: 'http://farm8.staticflickr.com/7149/6736529551_0ca7de79ab.jpg', image: 'http://farm4.staticflickr.com/3672/9324617763_ba7d0574aa.jpg')
 
