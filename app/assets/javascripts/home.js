@@ -1,14 +1,14 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+// # Place all the behaviors and hooks related to the matching controller here.
+// # All this logic will automatically be available in application.js.
+// # You can use CoffeeScript in this file: http://coffeescript.org/
 
 var app;
 
 app = angular.module("FitU", ["ngResource"]);
 
-app.factory("Entry", [
+app.factory("User", [
   "$resource", function($resource) {
-    return $resource("/entries/:id", {
+    return $resource("/users/:id", {
       id: "@id"
     }, {
       update: {
@@ -19,27 +19,27 @@ app.factory("Entry", [
 ]);
 
 this.HomeCtrl = [
-  "$scope", "Entry", function($scope, Entry) {
-    $scope.entries = Entry.query();
-    $scope.addEntry = function() {
-      var entry;
-      entry = Entry.save($scope.newEntry);
-      $scope.entries.push(entry);
-      return $scope.newEntry = {};
+  "$scope", "User", function($scope, User) {
+    $scope.users = User.query();
+    $scope.addUser = function() {
+      var user;
+      user = User.save($scope.newUser);
+      $scope.users.push(user);
+      return $scope.newUser = {};
     };
     return $scope.drawWinner = function() {
-      var entry, pool;
+      var user, pool;
       pool = [];
-      angular.forEach($scope.entries, function(entry) {
-        if (!entry.winner) {
-          return pool.push(entry);
+      angular.forEach($scope.entries, function(user) {
+        if (!user.winner) {
+          return pool.push(user);
         }
       });
       if (pool.length > 0) {
-        entry = pool[Math.floor(Math.random() * pool.length)];
-        entry.winner = true;
-        entry.$update();
-        return $scope.lastWinner = entry;
+        user = pool[Math.floor(Math.random() * pool.length)];
+        user.winner = true;
+        user.$update();
+        return $scope.lastWinner = user;
       }
     };
   }
