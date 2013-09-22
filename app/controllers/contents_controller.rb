@@ -9,24 +9,16 @@ class SessionsController < ApplicationController
   def show
     respond_with Session.find(params[:id])
   end
-
-  def new
+  
+  def create
     respond_with Session.create(params[:session])
   end
 
-  def edit
-    respond_with 
-  end
-
-  def create
-    respond_with
-  end
-
   def update
-    respond_with
+    respond_with Session.update(params[:id], params[:session])
   end
 
   def destroy
-    respond_with
+    respond_with Session.destroy(params[:id])
   end
 end
