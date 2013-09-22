@@ -17,8 +17,8 @@ u4 = User.create(name: 'Miley Cyrus', height: '60', weight: '120', location: 'Bo
 u5 = User.create(name: 'Sharon Stone', height: '63', weight: '140', location: 'Boston', url: '', image: '')
 u6 = User.create(name: 'Beyonce', height: '65', weight: '130', location: 'Boston', url: '', image: '')
 
-c1 = Course.create(title: 'Training for your first marathon', description: "Get the proper diet, running schedule and gear info so that you're ready for the NYC marathon", url: 'http://www.psl.msu.edu/_images/Gulbransen_sm.jpg', image: 'http://www.flickr.com/photos/stijlfoto/6902027713/')
+c1 = Course.create(title: 'Training for your first marathon', description: "Get the proper diet, running schedule and gear info so that you're ready for the NYC marathon", url: 'http://www.psl.msu.edu/_images/Gulbransen_sm.jpg', image: 'http://farm8.staticflickr.com/7191/6902027713_0cfa65d7cc.jpg')
 
-c2 = Course.create(title: 'Yoga', description: "The practice of yoga dates back five thousand years and its benefits have been repeatedly observed and documented over time. With regular practice, discipline and honest effort you will: reshape your body, reduce risk for sports injury, reduce the effects of stress.", url: 'http://www.flickr.com/photos/house4rent/6736529551/', image: 'http://www.flickr.com/photos/shebalso/9324617763/')
+c2 = Course.create(title: 'Yoga', description: "The practice of yoga dates back five thousand years and its benefits have been repeatedly observed and documented over time. With regular practice, discipline and honest effort you will: reshape your body, reduce risk for sports injury, reduce the effects of stress.", url: 'http://farm8.staticflickr.com/7149/6736529551_0ca7de79ab.jpg', image: 'http://farm4.staticflickr.com/3672/9324617763_ba7d0574aa.jpg')
 
-c3 = Course.create(title: 'Kickboxing', description: "Get a great cardio workout while practicing self defense.", url: 'http://www.flickr.com/photos/sirwiseowl/4997156954/', image: 'http://www.flickr.com/photos/neutralgroundwi/6065227723/')
+c3 = Course.create(title: 'Kickboxing', description: "Get a great cardio workout while practicing self defense.", url: 'http://farm5.staticflickr.com/4130/4997156954_009bdf77b8.jpg', image: 'http://farm7.staticflickr.com/6208/6065227723_f227638a52.jpg')
