@@ -5,6 +5,10 @@ HackfitHackathon13::Application.routes.draw do
 
   root to: "home#index"
 
+  resources :users
+  resources :contents
+  resources :courses
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
