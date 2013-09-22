@@ -1,2 +1,37 @@
-<h1>GA New York <3s GA Boston</h1>
-<iframe width="960" height="720" src="//www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <div class="container">
+
+      <div id="nav" class="row">
+          <div class="col-md-10">
+            <h1></h1>
+          </div>
+
+          <div class="col-md-2 paddingtop">
+            <a href="#">Log Out</a><br>
+            <a href="#">My Account</a> 
+          </div>
+      </div>
+
+      <div id="banner" class="row shadow">
+          <div class="col-md-7">
+            <h2>Learn From the Pros</h2>
+              <p>Access courses from Trainers in the convenience of your home or on your mobile device.</p>
+              <p>Track your progress from a variety of devices.  Compete with others from around the world. </p>
+
+          </div>
+          <div id="courseinfo" class="col-md-5">
+            <h3>Hey, Username!</h3>
+              <a href="lesson.html"><h4>How to sprint - Lesson 2 <img src="images/icon_play.png" height="27px" class="alignright"></h4></a>
+              <h4>Continuing Advanced Yoga - Lesson 11 <img src="images/icon_play.png" height="27px" class="alignright"></h4>
+              <h4>Continuing Kickboxing - Lesson 5 <img src="images/icon_play.png" height="27px" class="alignright"></h4>
+          </div>
+      </div>
+
+    <div id="features" class="row">
+      <div class="col-md-12">
+        <h2>Features</h2>
+      </div>
+
+    <!-- Render courses -->
+    <%= render 'contents' %>
+    
+    </div>
