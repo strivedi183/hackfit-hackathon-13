@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
   end
 
   def edit
-    respond_with
+    respond_with 
   end
 
   def create

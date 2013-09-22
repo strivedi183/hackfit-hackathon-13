@@ -11,25 +11,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130921203230) do
+ActiveRecord::Schema.define(version: 20130921230143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "courses", force: true do |t|
+  create_table "contents", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "url"
+    t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "sessions", force: true do |t|
+  create_table "courses", force: true do |t|
+    t.string   "title"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "courses_users", id: false, force: true do |t|
+    t.integer "course_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: true do |t|
+    t.string   "name"
+    t.integer  "weight"
+    t.integer  "height"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.string   "email"
     t.string   "encrypted_password", limit: 128
     t.string   "confirmation_token", limit: 128
@@ -39,8 +53,4 @@ ActiveRecord::Schema.define(version: 20130921203230) do
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
   add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
 
-=======
-  end
-
->>>>>>> ea31b2fd05cb9b402b7c2755f2bd554f282caf4f
 end
