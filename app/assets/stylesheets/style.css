@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'weblysleek_uilight';
-    src: url('../font/weblysleekuil-webfont.eot');
-    src: url('../font/weblysleekuil-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/weblysleekuil-webfont.woff') format('woff'),
-         url('../font/weblysleekuil-webfont.ttf') format('truetype'),
-         url('../font/weblysleekuil-webfont.svg#weblysleek_uilight') format('svg');
+    src: url('weblysleekuil-webfont.eot');
+    src: url('weblysleekuil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('weblysleekuil-webfont.woff') format('woff'),
+         url('weblysleekuil-webfont.ttf') format('truetype'),
+         url('weblysleekuil-webfont.svg#weblysleek_uilight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-{
+/*{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+}*/
 
 /* Clear fix hack */
 .clearfix:after {
@@ -26,21 +26,21 @@
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .alignright {
-	float: right; 
-	padding: 0 0 10px 10px;
+  float: right;
+  padding: 0 0 10px 10px;
 }
 
 .alignleft {
-	float: left; 
-	padding: 0 10px 10px 0;
+  float: left;
+  padding: 0 10px 10px 0;
 }
 
 /******************************************
-/* BASE STYLES                   
+/* BASE STYLES
 /*******************************************/
 
 body {
@@ -55,14 +55,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 h1 {
-  background: url('../images/fitU.png') no-repeat;
-  float:left;
+  background: url('FitU.png') no-repeat;
+  float: left;
   width: 141px;
   height: 66px;
   margin: 30px 0px 30px 0px;
   display: inline-block;
-
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -72,11 +75,11 @@ h2 {
   margin: 0;
   font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
   font-size: 30px;
-  color: #4fa319; 
+  color: #4fa319;
   line-height: 2;
 }
 
-h3 h4 {
+h3, h4 {
   font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
   color:black;
 }
@@ -84,75 +87,157 @@ h3 h4 {
 #nav {
 
 }
-  #nav a {
-    float: right;
-    line-height: 1.5;
-    color: #999;
-  }
 
-  #nav a:hover {
-    color: #000;
-    text-decoration: none;
-  }
+#nav a {
+  float: right;
+  line-height: 1.5;
+  color: #999;
+}
+
+#nav a:hover {
+  color: #000;
+  text-decoration: none;
+}
 
 #banner {
-  background: url('../images/jogging.jpg') no-repeat;
+  background: url('jogging.jpg') no-repeat;
   height: 400px;
   padding: 20px;
 }
 
-  #banner h2 {
-    font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
-    color: #FFF;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
+#banner h2 {
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
 
-  #banner h3, #welcome_msg h3 {
-    font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    color: #000;
-    font size: 25px;
-  }
+#banner h3, #welcome_msg h3 {
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2em;
+}
 
-  #banner h4 {
-    font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
-    background: #000;
-    color: #FFF;
-    padding: 15px;
-  }
+#banner h4 {
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #FFF;
+  padding: 20px;
+}
 
-  #banner p {
-    color: #FFF;
-    font-size: 20px;
-    font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
-  }
+#banner h4:hover {
+  background: #69cccc;
+}
+
+#banner h4:hover:nth-of-type(1) {
+  background: #69cccc;
+}
+
+#banner h4:hover:nth-of-type(2) {
+  background: green;
+}
+
+#banner p {
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+}
 
 #features {
+  margin-bottom: 100px;
+}
 
+#features img {
+  width: 300px;
+  border: 1px solid #000;
+  padding: 2px;
 }
 
 #courseinfo {
   background: #FFF;
   opacity:0.6;
   filter:alpha(opacity=60);
+  padding-bottom: 20px;
 }
 
 /******************************************
-/* LAYOUT                   
+/* Search Bar
 /*******************************************/
 
-header {
-
+#searchbar {
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 5px;
+  padding: 5px;
+  background: #FFF;
 }
 
-footer {
+#searchbar img {
+  border-left: 1px solid #CCC;
+  padding-left: 3%;
+}
+
+#searchbar img:hover {
+  opacity:0.6;
+  filter:alpha(opacity=60);
+}
+
+#search {
+  height: 41px;
+  width: 85%;
+  color: #999;
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 0;
+  letter-spacing: 2px;
+  background: #FFF;
+  border: none;
+}
+
+#search_btn {
+  background: url('../images/icon_search.png') #FFF;
+  border: none;
+  height: 41px;
+}
+
+#searchbar input[type="submit"] {
 
 }
 
 /******************************************
-/* ADDITIONAL STYLES                   
+/* User Update
 /*******************************************/
+
+#userupdate {
+}
+
+#userupdate img {
+  border: none;
+}
+
+.margin {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.update {
+  float: left;
+  background: #000;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.center {
+  text-align: center;
+}
+
+.round-bg {
+  border: 1px solid #FFF;
+  border-radius:25px;
+}
 
 .alignright {
   float: right;
@@ -160,12 +245,11 @@ footer {
 }
 
 .arrow-left {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent; 
-  
-  border-right:5px solid #69cccc; 
+  border-bottom: 5px solid transparent;
+  border-right:5px solid #69cccc;
 }
 
 .paddingtop {
@@ -186,7 +270,7 @@ footer {
 }
 
 /******************************************
-/* VIDEO                 
+/* VIDEO
 /*******************************************/
 
 .videoWrapper {
@@ -215,7 +299,7 @@ img {
 }
 
 /******************************************
-/* STAR              
+/* STAR
 /*******************************************/
 
 .rating {
@@ -246,8 +330,41 @@ img {
      height:100px;
 }
 
-#welcome_msg{
-     padding:1%;
+#review_rating{
+     float:left;
+     display:block;
+}
+
+
+
+/******************************************
+/* METRICS
+/*******************************************/
+
+#metrics_box div{
+     display:inline-block;
+     float:left;
+}
+
+#metrics_box #metrics1 img{
+     margin-right:1px;
+}
+
+#metrics_box #metrics3 img{
+     margin-left:1px;
+}
+
+#metrics_box #metrics1 #play{
+     z-index: 2;
+}
+
+
+/******************************************
+/* OTHER - JO
+/*******************************************/
+
+#welcome_msg {
+  padding:1%;
 }
 
 #welcome_msg h4 {
@@ -256,10 +373,45 @@ img {
   }
 
 #lesson_instructions h3, h4 {
-     font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
-    color: black;
+  font-family: 'weblysleek_uilight', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+#graph {
+  display:inline-block;
+  background-color:gray;
+}
+
+#run div {
+  float:left;
+}
+
+#run #run1 img {
+  margin-right:100px;
+  margin-left:0;
+  z-index:0;
+}
+
+#run #run2 {
+  z-index:0;
+}
+
+#run #run3 img {
+  margin-left:100px;
+  margin-right:0;
+}
+
+#run1 #play img {
+  z-index:2;
+}
+
+#rating_box p {
+  text-align: right;
+}
+
+#rating_box .rating {
+  display:block;
+  float:right;
 }
 
 /*border: 2px solid #69cccc;*/
-
-
