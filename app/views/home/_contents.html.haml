@@ -1,0 +1,5 @@
+@courses.each do |course|
+  = link_to(image_tag(course.image), course_path(course))
+  = course.title
+  = course.description
+  
