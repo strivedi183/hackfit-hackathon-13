@@ -8,6 +8,10 @@
 * Nikola
 * Eddie
 * Juan
+* Nicholas Costa
+* Sneha Dasgupta
+* Maggie Xie
+* Johanna Wightman
 
 
 ##License
