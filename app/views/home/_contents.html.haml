@@ -1,5 +1,7 @@
-@courses.each do |course|
-  = link_to(image_tag(course.image), course_path(course))
-  = course.title
-  = course.description
-  
+.row
+  @courses.each do |course|
+    .col-md-4.border
+      = link_to(image_tag(course.image), course_path(course))
+      = course.title
+      = course.description
+    
